@@ -2,5 +2,19 @@
 using namespace std;
 
 int main() {
-   return 0;
+    int n=0, num_0=0, num_1=1, num_2;
+    cin >> n;
+    if (n>=2) {
+        for (num_2=0; num_2<=n; num_2++) {
+            num_2=num_0+num_1;
+            if (num_2<=n) {
+                cout << num_2 << endl;
+            }
+            num_1=num_0;
+            num_0=num_2;
+        }
+    } else {
+        cout << "errore" << endl;
+    }
+    return 0;
 }
