@@ -4,6 +4,9 @@ using namespace std;
 int main() {
     int n=0, num_0=0, num_1=1, num_2;
     cin >> n;
+    if (n==1) {
+        cout << "1" <<endl;
+    }
     for (num_2=0; num_2<=n; num_2++) {
         num_2=num_0+num_1;
         if (num_2<=n) {
